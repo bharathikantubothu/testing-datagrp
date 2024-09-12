@@ -12,7 +12,7 @@ include: "/views/**/*.view.lkml"
   #max_cache_age: "1 hour"
 #}
 datagroup: orders_datagroup_bharathi {
-  sql_trigger: SELECT max(id) FROM orders ;;
+  sql_trigger: SELECT max(orders.order_id) FROM orders ;;
   max_cache_age: "2 minutes"
 }
 
